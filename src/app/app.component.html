@@ -1,9 +1,9 @@
 <div class="row mx-0">
-    <div class="col-md-2 col-xs-4 px-0" [@slide]="menuState">
+    <div class="col-md-2 px-0" id="sidenav" [@slide]="menuState">
         <app-sidenav (clicking)="onClicked()"></app-sidenav>
     </div>
-    <div class="col-md-9 pt-2" [@slideRouter]="routerState">
-        <button class="bttn" *ngIf="showBtn" (click)="openMenu()"><i class="fas fa-bars"></i></button>
+    <button class="bttn" *ngIf="showBtn" (click)="openMenu()"><i class="fas fa-bars"></i></button>
+    <div class="col-md-9 pt-2" id="router" [@slideRouter]="routerState">
         <router-outlet></router-outlet>
     </div>
 </div>

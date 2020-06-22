@@ -30,7 +30,7 @@ import { ThrowStmt } from '@angular/compiler';
     ),
     trigger('slideRouter', [
       state('out', style({
-        transform: 'translate3d(0,-70%,0)'
+        transform: 'translate3d(0, -350px,0)'
       })),
       state('in', style({
         transform: 'translate3d(0, 0, 0)'
@@ -55,6 +55,7 @@ export class AppComponent implements OnInit {
     } else {
       this.menuState = 'in'
     }
+    this.showBtn = false
   }
 
   constructor() {
@@ -62,7 +63,6 @@ export class AppComponent implements OnInit {
   }
 
   openMenu() {
-    // this.menuState === 'in' ? this.menuState = 'out' : this.menuState = 'in'
     if(this.size === 'tablet') {
       if(this.menuState === 'inTablet') {
         this.menuState = 'outTablet'
@@ -111,7 +111,7 @@ export class AppComponent implements OnInit {
     let check = 'desktop'
     this.screenWidth = window.innerWidth
     console.log(this.screenWidth)
-    if(this.screenWidth <= 768) {
+    if(this.screenWidth <= 767) {
       this.size = 'tablet'
       this.routerState = 'out'
       this.menuState = 'outTablet'
