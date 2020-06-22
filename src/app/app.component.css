@@ -1,0 +1,40 @@
+mat-sidenav {
+    background: linear-gradient(to right, #f5bccf, #b3f5b3);
+    width: 15%
+}
+
+mat-sidenav-container {
+    height: 100%
+}
+
+mat-sidenav-content {
+    background-color: white;
+}
+
+.row {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.bttn {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    height: 20px;
+    width: 40px;
+    box-shadow: rgba(230,196,222,1) 3px 3px 2px 0px;
+    outline: none;
+}
+
+.bttn:hover {
+    background-color: #d6fbd6;
+    color: rgb(111, 108, 112)
+}
+
+.bttn:focus {
+    background-color: #d6fbd6;
+    box-shadow: inset rgba(230,196,222,1) 2px 2px 3px 1px;
+    color: rgb(111, 108, 112)
+}
+

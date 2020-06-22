@@ -1,0 +1,46 @@
+.side {
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right,  #f5bccf, #b3f5b3);
+    z-index: 100;
+    overflow: hidden;
+}
+
+ul, li {
+    width: 100%;
+    padding-right: 0;
+    background-image: linear-gradient(to right, #f5bccf, #b3f5b3)
+}
+
+.list-group .list-group-flush {
+    padding-right: 0;
+}
+
+a {
+    color: rgb(111, 108, 112);
+    font-weight: 400;
+    font-size: 2vh;
+}
+
+.bttn {
+    background: none;
+    border: none;
+    border-radius: 5px;
+    margin: 20px;
+    height: 20px;
+    width: 40px;
+    outline: none;
+    color: rgb(111, 108, 112)
+}
+
+.bttn:hover {
+    background-color: #d6fbd6;
+}
+
+.bttn:focus {
+    background-color: #d6fbd6;
+    box-shadow: inset rgba(230,196,222,1) 2px 2px 3px 1px; 
+}
+
+

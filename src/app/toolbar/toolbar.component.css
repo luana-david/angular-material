@@ -1,0 +1,17 @@
+.navbar {
+    justify-content: space-around;
+}
+
+a {
+    margin-right: 1rem; 
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(200, 205, 255);
+}
+
+a:active {
+    text-shadow: 1px 1px 1px 1px black;
+}
