@@ -7,6 +7,8 @@ import { ProgressSpinnerComponent } from './progress-spinner/progress-spinner.co
 import { MenuComponent } from './menu/menu.component';
 import { ListComponent } from './list/list.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { CardsComponent } from './cards/cards.component';
 
 
 const routes: Routes = [
@@ -18,6 +20,8 @@ const routes: Routes = [
   {path: "menu", component: MenuComponent},
   {path: "list", component: ListComponent},
   {path: "sidenav", component: SidenavComponent},
+  {path: "expansion-panel", component: ExpansionPanelComponent},
+  {path: "cards", component: CardsComponent},
 
 ];
 

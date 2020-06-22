@@ -14,6 +14,8 @@ import { MenuComponent } from './menu/menu.component';
 import { ListComponent } from './list/list.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
+import { CardsComponent } from './cards/cards.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.compo
     MenuComponent,
     ListComponent,
     SidenavComponent,
-    ExpansionPanelComponent
+    ExpansionPanelComponent,
+    CardsComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
