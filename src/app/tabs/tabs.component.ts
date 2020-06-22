@@ -12,4 +12,8 @@ export class TabsComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  logChange(idx) {
+    console.log(idx)
+  }
+
 }

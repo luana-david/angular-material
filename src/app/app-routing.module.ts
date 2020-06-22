@@ -9,6 +9,9 @@ import { ListComponent } from './list/list.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { CardsComponent } from './cards/cards.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { InputsComponent } from './inputs/inputs.component';
 
 
 const routes: Routes = [
@@ -22,6 +25,9 @@ const routes: Routes = [
   {path: "sidenav", component: SidenavComponent},
   {path: "expansion-panel", component: ExpansionPanelComponent},
   {path: "cards", component: CardsComponent},
+  {path: "tabs", component: TabsComponent},
+  {path: "stepper", component: StepperComponent},
+  {path: "inputs", component: InputsComponent},
 
 ];
 

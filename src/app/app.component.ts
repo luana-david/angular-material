@@ -30,7 +30,7 @@ import { ThrowStmt } from '@angular/compiler';
     ),
     trigger('slideRouter', [
       state('out', style({
-        transform: 'translate3d(0, -350px,0)'
+        transform: 'translate3d(0, -490px,0)'
       })),
       state('in', style({
         transform: 'translate3d(0, 0, 0)'

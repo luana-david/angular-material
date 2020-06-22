@@ -16,6 +16,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { CardsComponent } from './cards/cards.component';
 import { TabsComponent } from './tabs/tabs.component';
+import { StepperComponent } from './stepper/stepper.component';
+import { InputsComponent } from './inputs/inputs.component';
 
 
 @NgModule({
@@ -31,7 +33,9 @@ import { TabsComponent } from './tabs/tabs.component';
     SidenavComponent,
     ExpansionPanelComponent,
     CardsComponent,
-    TabsComponent
+    TabsComponent,
+    StepperComponent,
+    InputsComponent
   ],
   imports: [
     BrowserModule,
