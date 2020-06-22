@@ -3,7 +3,7 @@
         <app-sidenav (clicking)="onClicked()"></app-sidenav>
     </div>
     <div class="col-md-9 pt-2" [@slideRouter]="routerState">
-        <button class="bttn" *ngIf="menuState === 'out' || menuState === 'outTablet'" (click)="openMenu()"><i class="fas fa-bars"></i></button>
+        <button class="bttn" *ngIf="showBtn" (click)="openMenu()"><i class="fas fa-bars"></i></button>
         <router-outlet></router-outlet>
     </div>
 </div>

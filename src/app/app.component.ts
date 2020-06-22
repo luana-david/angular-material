@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { trigger, style, state, transition, animate } from '@angular/animations';
+import { ThrowStmt } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
@@ -45,6 +46,7 @@ export class AppComponent implements OnInit {
   routerState: string
   openedSide = false
   size: string
+  showBtn: boolean = false
 
   ngOnInit() {
     if(this.size === 'tablet') {
@@ -67,12 +69,18 @@ export class AppComponent implements OnInit {
       } else {
         this.menuState = 'inTablet'
         this.routerState = 'in'
+        setTimeout(() => {
+          this.showBtn = false
+        }, 200)
       }
     } else {
       if(this.menuState === 'in') {
         this.menuState = 'out'
       } else {
         this.menuState = 'in'
+        setTimeout(() => {
+          this.showBtn = false
+        }, 200)
       }
     }
     console.log(this.menuState)
@@ -85,11 +93,16 @@ export class AppComponent implements OnInit {
     } else {
       this.menuState = 'out'
     }
+      if(this.menuState === 'outTablet' || this.menuState === 'out') {
+        setTimeout(() => {
+          this.showBtn = true
+        }, 200)
+      }
   }
 
-  openSide() {
-    this.openedSide = !this.openedSide
-  }
+  // openSide() {
+  //   this.openedSide = !this.openedSide
+  // }
 
   screenWidth: number
 
@@ -102,10 +115,12 @@ export class AppComponent implements OnInit {
       this.size = 'tablet'
       this.routerState = 'out'
       this.menuState = 'outTablet'
+      this.showBtn = true
     } else {
       this.size = 'desktop'
       this.menuState = 'in'
       this.routerState = 'in'
+      this.showBtn = false
     }
     console.log(this.size)
   }
