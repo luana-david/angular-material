@@ -38,3 +38,15 @@ mat-sidenav-content {
     color: rgb(111, 108, 112)
 }
 
+button {
+    position: fixed;
+    top: -10px;
+    left: -10%;
+}
+
+@media only screen and (max-width: 768px) {
+    button {
+        top: -8%;
+        left: 0%; 
+    }
+}
