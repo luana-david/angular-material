@@ -17,6 +17,22 @@ li:hover {
     transform: translateX(20px)
 }
 
+/* a::after {
+    content: '';
+    position: absolute;
+    top: 65%;
+    left: 5%;
+    background-color: white;
+    width: 0%;
+    height: 5px;
+    transition: 0.8s width;
+}
+
+a:hover::after {
+    width: 30%;
+} */
+
+
 .list-group .list-group-flush {
     padding-right: 0;
 }
@@ -26,7 +42,6 @@ a {
     font-weight: 400;
     font-size: 2vh;
 }
-
 
 .bttn {
     background: none;
