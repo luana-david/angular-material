@@ -14,7 +14,6 @@ import { ThrowStmt } from '@angular/compiler';
       state('out', style(
         {
           transform: 'translate3d(-100%, 0, 0)',
-          zIndex: '-1'
         }
       )),
       state('inTablet', style({
