@@ -16,8 +16,13 @@ mat-sidenav-content {
     overflow-y: hidden;
 }  */
 
+:host {
+    height: 100%;
+}
+
 #sidenav {
     height: 100vh;
+    z-index: 100;
 }
 
 .bttn {
@@ -45,16 +50,26 @@ mat-sidenav-content {
 button {
     position: fixed;
     top: 0%;
-    left: 10%;
+    left: 0%;
+}
+
+#router {
+    position: fixed;
+    left: 5%;
+    top: 5%
 }
 
 @media only screen and (max-width: 768px) {
-    button {
+    /* button {
         top: 0px;
         left: 0%; 
-    }
+    } */
 
     #sidenav {
         height: 30%;
+    }
+
+    #router {
+        position: relative;
     }
 }

@@ -13,7 +13,8 @@ import { ThrowStmt } from '@angular/compiler';
       })),
       state('out', style(
         {
-          transform: 'translate3d(-100%, 0, 0)'
+          transform: 'translate3d(-100%, 0, 0)',
+          zIndex: '-1'
         }
       )),
       state('inTablet', style({
@@ -30,7 +31,7 @@ import { ThrowStmt } from '@angular/compiler';
     ),
     trigger('slideRouter', [
       state('out', style({
-        transform: 'translate3d(0, -600px,0)'
+        transform: 'translate3d(0, -650px,0)'
       })),
       state('in', style({
         transform: 'translate3d(0, 0, 0)'
@@ -71,7 +72,7 @@ export class AppComponent implements OnInit {
         this.routerState = 'in'
         setTimeout(() => {
           this.showBtn = false
-        }, 200)
+        }, 80)
       }
     } else {
       if(this.menuState === 'in') {
@@ -80,7 +81,7 @@ export class AppComponent implements OnInit {
         this.menuState = 'in'
         setTimeout(() => {
           this.showBtn = false
-        }, 200)
+        }, 80)
       }
     }
     console.log(this.menuState)
@@ -96,13 +97,13 @@ export class AppComponent implements OnInit {
       if(this.menuState === 'outTablet' || this.menuState === 'out') {
         setTimeout(() => {
           this.showBtn = true
-        }, 200)
+        }, 250)
       }
   }
 
-  // openSide() {
-  //   this.openedSide = !this.openedSide
-  // }
+ openSide() {
+    this.openedSide = !this.openedSide
+  }
 
   screenWidth: number
 
