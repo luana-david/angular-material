@@ -18,6 +18,12 @@ import { CardsComponent } from './cards/cards.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { InputsComponent } from './inputs/inputs.component';
+import { TablesComponent } from './tables/tables.component';
+import { ScrollingComponent } from './scrolling/scrolling.component';
+import { ReactiveFormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { TooltipComponent, CustomSnackBarComponent } from './tooltip/tooltip.component';
+import { DialogComponent } from './dialog/dialog.component'
 
 
 @NgModule({
@@ -35,13 +41,21 @@ import { InputsComponent } from './inputs/inputs.component';
     CardsComponent,
     TabsComponent,
     StepperComponent,
-    InputsComponent
+    InputsComponent,
+    TablesComponent,
+    ScrollingComponent,
+    TooltipComponent,
+    CustomSnackBarComponent,
+    DialogComponent
   ],
+  entryComponents: [CustomSnackBarComponent, DialogComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

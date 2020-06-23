@@ -12,6 +12,9 @@ import { CardsComponent } from './cards/cards.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { StepperComponent } from './stepper/stepper.component';
 import { InputsComponent } from './inputs/inputs.component';
+import { TablesComponent } from './tables/tables.component';
+import { ScrollingComponent } from './scrolling/scrolling.component';
+import { TooltipComponent } from './tooltip/tooltip.component';
 
 
 const routes: Routes = [
@@ -28,7 +31,9 @@ const routes: Routes = [
   {path: "tabs", component: TabsComponent},
   {path: "stepper", component: StepperComponent},
   {path: "inputs", component: InputsComponent},
-
+  {path: "tables", component: TablesComponent},
+  {path: "scrolling", component: ScrollingComponent},
+  {path: "tooltip", component: TooltipComponent},
 ];
 
 @NgModule({

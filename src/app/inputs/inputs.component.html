@@ -26,3 +26,40 @@
     </mat-select>
 </mat-form-field>
 {{selected}}
+
+<form >
+    <mat-form-field>
+        <input type="text" [formControl]="myControl" [matAutocomplete]="auto" matInput>
+        <mat-autocomplete #auto='matAutocomplete' [displayWith]="displayFn">
+            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                {{option}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>
+
+<mat-checkbox>
+    Subscribe
+</mat-checkbox>
+<br>
+<mat-checkbox labelPosition = 'before'>
+    Subscribe
+</mat-checkbox>
+<br>
+<mat-radio-group>
+    <mat-radio-button value="Angular">
+        Angular
+    </mat-radio-button>
+    <mat-radio-button value="Vue">
+        Vue
+    </mat-radio-button>
+    <mat-radio-button value="React">
+        React
+    </mat-radio-button>
+</mat-radio-group>
+<br>
+<mat-form-field>
+    <input matInput [matDatepickerFilter]="dateFilter" [matDatepicker]="myDatepicker">
+    <mat-datepicker-toggle [for]="myDatepicker" matSuffix></mat-datepicker-toggle>
+    <mat-datepicker #myDatepicker startView="year"></mat-datepicker>
+</mat-form-field>
